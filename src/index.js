@@ -342,6 +342,7 @@ class Serverless_WSO2_APIM {
 
   async uploadCerts() {
     const wso2APIM = this.serverless.service.custom.wso2apim;
+    console.log(JSON.stringify(this.serverless.service.custom.wso2apim, null, 2))
     const apiDefs = wso2APIM.apidefs;
     const slsDir = this.serverless.config.servicePath + "/.serverless";
     try {
